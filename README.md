@@ -1,66 +1,48 @@
-## Foundry
+# Project Name
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+NFT AGGREGATOR.
 
-Foundry consists of:
+## About this Project.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+This project covers the complete process for developing an NFT Aggregator DApp that connects to user wallets, fetches all owned NFTs, and displays trading information across marketplaces. This functionality gives users a centralized view of their NFT portfolio along with actionable trading opportunities.
 
-## Documentation
+## Features
 
-https://book.getfoundry.sh/
+- Fetches NFTs on Connection of Wallet.
+- Displays all possessed NFTs, outlining which can be traded and which can't be traded.
+- Displays the Marketplaces where these NFTs can be traded at.
 
-## Usage
+### Prerequisites
 
-### Build
+- Openzeppelin
+- Git
+- Foundry
 
-```shell
-$ forge build
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/vectordotsats/NFT-Aggregator
 ```
 
-### Test
+2. Navigate to the project directory:
 
-```shell
-$ forge test
+```bash
+cd nft-aggregator
 ```
 
-### Format
+3. Navigate to the project directory:
 
-```shell
-$ forge fmt
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+forge install OpenZeppelin/openzeppelin-foundry-upgrades
+forge install OpenZeppelin/openzeppelin-contracts-upgradeable
 ```
 
-### Gas Snapshots
+4. Navigate to foundry.toml
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+```bash
+@openzeppelin/contracts/=lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/contracts/,
+@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
 ```
