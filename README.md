@@ -29,7 +29,7 @@ git clone https://github.com/vectordotsats/NFT-Aggregator
 2. Navigate to the project directory:
 
 ```bash
-cd nft-aggregator
+cd Nft-aggregator
 ```
 
 3. Navigate to the project directory:
