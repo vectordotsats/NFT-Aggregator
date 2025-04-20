@@ -15,5 +15,8 @@
     "url": "https://github.com/vectordotsats/NFT-Aggregator/issues"
   },
   "homepage": "https://github.com/vectordotsats/NFT-Aggregator#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "react-icons": "^5.5.0"
+  }
 }
