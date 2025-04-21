@@ -9,7 +9,7 @@ export const Header = () => {
         <div>Nerfed</div>
       </div>
       {/* <div></div> */}
-      <button>Connected</button>
+      <button className="">Connected</button>
     </header>
   )
 }
