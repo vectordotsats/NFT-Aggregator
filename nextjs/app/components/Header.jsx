@@ -9,7 +9,7 @@ export const Header = () => {
         <div className="text-xl uppercase font-semibold">Nerfed</div>
       </div>
       {/* <div></div> */}
-      <button className="text-lg capitalize font-semibold py-1 px-2 border rounded-lg cursor-pointer">Connect</button>
+      <button className="text-lg capitalize font-semibold py-1 px-2 border rounded-lg cursor-pointer">Connect Wallet</button>
     </header>
   )
 }
