@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const Body = () => {
   return (
-    <div className='mt-4 mb-4 p-4 bg-white rounded-lg shadow-md'>
+    <div className='grid grid-cols-5 gap-1 mt-4 mb-4 p-4 bg-white rounded-lg shadow-md'>
 
       {/* First Nft */}
         <div>
@@ -19,7 +19,7 @@ export const Body = () => {
 
         {/* Second Nft */}
         <div>
-            <Image src="/nextjs/public/No1.svg" alt="" width={100} height={80}></Image>
+            <Image src="/nextjs/public/No2.svg" alt="" width={100} height={80}></Image>
             <div>
               <div>
                 <div>Name of Art</div>
@@ -31,7 +31,7 @@ export const Body = () => {
 
         {/* Third Nft */}
         <div>
-            <Image src="/nextjs/public/No1.svg" alt="" width={100} height={80}></Image>
+            <Image src="/nextjs/public/No3.svg" alt="" width={100} height={80}></Image>
             <div>
               <div>
                 <div>Name of Art</div>
@@ -43,7 +43,7 @@ export const Body = () => {
 
         {/* Fourth Nft */}
         <div>
-            <Image src="/nextjs/public/No1.svg" alt="" width={100} height={80}></Image>
+            <Image src="/nextjs/public/No4.svg" alt="" width={100} height={80}></Image>
             <div>
               <div>
                 <div>Name of Art</div>
@@ -55,7 +55,7 @@ export const Body = () => {
 
         {/* Fifth Nft */}
         <div>
-            <Image src="/nextjs/public/No1.svg" alt="" width={100} height={80}></Image>
+            <Image src="/nextjs/public/No5.svg" alt="" width={100} height={80}></Image>
             <div>
               <div>
                 <div>Name of Art</div>
@@ -64,7 +64,7 @@ export const Body = () => {
               <div>Marketplace</div>
             </div>
         </div>
-        
+
     </div>
   )
 }
