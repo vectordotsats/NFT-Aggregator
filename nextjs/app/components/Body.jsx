@@ -7,64 +7,26 @@ export const Body = () => {
 
       {/* First Nft */}
         <div>
-            <Image src="/No1.png" alt="Art 1" width={240} height={180} />
-            <div>
-              <div>
-                <div>Name of Art</div>
-                <div>Price: 0.1ETH</div>
+          <a href="https://opensea.io/item/ethereum/0xf39c410dac956ba98004f411e182fb4eed595270/1606" target="_blank" rel="noopener noreferrer"><Image src="/No1.png" alt="Art 1" width={240} height={180} /></a>
+            <div className='flex flex-col justify-between item-center gap-5 text-sm p-2'>
+              <div className='flex justify-between items-center'>
+                <div className='font-bold'>One Gravity</div>
+                <div>1.585ETH</div>
               </div>
-              <div>Marketplace</div>
+              <div className='font-bold'>Opensea</div>
             </div>
         </div>
-
-      {/* Second Nft */}
-      <div>
-            <Image src="/No2.png" alt="Art 1" width={240} height={180} />
-            <div>
-              <div>
-                <div>Name of Art</div>
-                <div>Price: 0.1ETH</div>
-              </div>
-              <div>Marketplace</div>
-            </div>
-        </div>
-
-        {/* Third Nft */}
+      {/* First Nft */}
         <div>
-            <Image src="/No3.png" alt="Art 1" width={240} height={180} />
-            <div>
-              <div>
-                <div>Name of Art</div>
-                <div>Price: 0.1ETH</div>
+          <a href="https://opensea.io/item/ethereum/0xf39c410dac956ba98004f411e182fb4eed595270/1606" target="_blank" rel="noopener noreferrer"><Image src="/No2.png" alt="Art 2" width={240} height={180} /></a>
+            <div className='flex flex-col justify-between item-center gap-1 text-sm px-8'>
+              <div className='flex justify-between items-center'>
+                <div className='font-bold'>Lil Pudgy #13456</div>
+                <div>1.548ETH</div>
               </div>
-              <div>Marketplace</div>
+              <div className='font-bold'>Opensea</div>
             </div>
         </div>
-
-        {/* Fourth Nft */}
-        <div>
-            <Image src="/No4.png" alt="Art 1" width={240} height={180} />
-            <div>
-              <div>
-                <div>Name of Art</div>
-                <div>Price: 0.1ETH</div>
-              </div>
-              <div>Marketplace</div>
-            </div>
-        </div>
-
-        {/* Fifth Nft */}
-        <div>
-            <Image src="/No5.png" alt="Art 1" width={240} height={180} />
-            <div>
-              <div>
-                <div>Name of Art</div>
-                <div>Price: 0.1ETH</div>
-              </div>
-              <div>Marketplace</div>
-            </div>
-        </div>
-
 
     </div>
   )
