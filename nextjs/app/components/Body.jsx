@@ -31,7 +31,7 @@ export const Body = () => {
 
         {/* Third Nft */}
         <div>
-            <Image src="/No3.jpeg" alt="Art 1" width={240} height={180} />
+            <Image src="/No3.png" alt="Art 1" width={240} height={180} />
             <div>
               <div>
                 <div>Name of Art</div>
@@ -43,7 +43,7 @@ export const Body = () => {
 
         {/* Fourth Nft */}
         <div>
-            <Image src="/No1.jpeg" alt="Art 1" width={240} height={180} />
+            <Image src="/No4.png" alt="Art 1" width={240} height={180} />
             <div>
               <div>
                 <div>Name of Art</div>
@@ -55,7 +55,7 @@ export const Body = () => {
 
         {/* Fifth Nft */}
         <div>
-            <Image src="/No1.jpeg" alt="Art 1" width={240} height={180} />
+            <Image src="/No5.png" alt="Art 1" width={240} height={180} />
             <div>
               <div>
                 <div>Name of Art</div>
