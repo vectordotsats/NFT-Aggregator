@@ -1,5 +1,6 @@
 import React from 'react';
 import { RxStitchesLogo } from "react-icons/rx";
+import { WalletConnect } from './WalletConnection.jsx';
 
 export const Header = () => {
   return (
@@ -9,7 +10,9 @@ export const Header = () => {
         <div className="text-xl uppercase font-semibold">Nerfed</div>
       </div>
       {/* <div></div> */}
-      <button className="text-lg capitalize font-semibold py-1 px-2 border rounded-lg cursor-pointer">Connect Wallet</button>
+      
+      <WalletConnect />
+      {/* <button className="text-lg capitalize font-semibold py-1 px-2 border rounded-lg cursor-pointer">Connect Wallet</button> */}
     </header>
   )
 }
