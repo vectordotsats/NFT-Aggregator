@@ -2,7 +2,6 @@
 import {Header} from "./components/Header.jsx";
 import {Body} from "./components/Body.jsx";
 import { Dashboard } from "./components/Dashboard.jsx";
-const queryClient = new QueryClient();
 
 // Main component
 export default function Home() {
