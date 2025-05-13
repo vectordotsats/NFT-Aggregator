@@ -46,3 +46,10 @@ forge install OpenZeppelin/openzeppelin-contracts-upgradeable
 @openzeppelin/contracts/=lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/contracts/,
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
 ```
+
+## Purpose of This NFT Aggregator
+
+- Connects to a user's wallet.
+- Fetches all NFTs owned by the user accross multiple marketplaces and multiple chains.
+- Displays trading information(e.g., price, marketplace, etc.).
+- Allow users to interact with NFTs (e.g., buy, sell or transfer).
