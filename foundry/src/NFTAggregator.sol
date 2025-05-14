@@ -26,7 +26,10 @@ contract NFTAggregator {
         for (uint256 i = 0; i < balance; i++) {
             if (nft.ownerOf(i) == _owner) {
                 tokenIds[index] = i;
+                index++;
+                if (index == balance) break;
             }
         }
+        return tokenIds;
     }
 }
