@@ -51,5 +51,7 @@ forge install OpenZeppelin/openzeppelin-contracts-upgradeable
 
 - Connects to a user's wallet.
 - Fetches all NFTs owned by the user accross multiple marketplaces and multiple chains.
+- Provides detailed count information about owned NFTs on the dashboard.
+- Displays all Owner NFT on the Nft display section(body), just below the dashboard.
 - Displays trading information(e.g., price, marketplace, etc.).
 - Allow users to interact with NFTs (e.g., buy, sell or transfer).
