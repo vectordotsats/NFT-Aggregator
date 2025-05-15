@@ -17,6 +17,7 @@
   "homepage": "https://github.com/vectordotsats/NFT-Aggregator#readme",
   "description": "",
   "dependencies": {
+    "ethers": "^6.14.0",
     "react-icons": "^5.5.0",
     "viem": "^2.29.0",
     "wagmi": "^2.15.2"
