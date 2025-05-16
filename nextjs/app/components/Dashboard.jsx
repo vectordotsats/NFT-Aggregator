@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import { getOwnedNFTs } from "/foundry/src/Contract.jsx";
+"use client";
 
-const Dashboard = () => {
-  const [nftContract, setNFTContract] = useState("");
+import React, { useState } from "react";
+import { getOwnedNFTs } from "../../foundry/src/Contract";
+
+export const Dashboard = () => {
+  //   const [nftContract, setNFTContract] = useState("");
   const [ownedNFTs, setOwnedNFTs] = useState([]);
 
   const fetchNFTs = async () => {
@@ -14,7 +16,12 @@ const Dashboard = () => {
     setOwnedNFTs[tokenIds];
   };
 
-  return <div></div>;
+  return (
+    <div>
+      <button onClick={fetchNFTs}>Fetch NFTs</button>
+      {ownedNFTs.map((id) => (
+        <div key={id}>Token ID: {id}</div>
+      ))}
+    </div>
+  );
 };
-
-export default Dashboard;
