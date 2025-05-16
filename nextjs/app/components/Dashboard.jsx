@@ -8,12 +8,25 @@ export const Dashboard = () => {
   const [ownedNFTs, setOwnedNFTs] = useState([]);
 
   const fetchNFTs = async () => {
-    const accounts = await window.ethereum.request({
-      method: "eth_requestAccounts",
-    });
-    const owner = accounts[0];
-    const tokenIds = await getOwnedNFTs(nftContract, owner);
-    setOwnedNFTs[tokenIds];
+    try {
+      // Checking if the wallet is already conncected.
+      const accounts = await window.ethereum.request({
+        method: "eth_accounts",
+      });
+
+      if (accounts.length === 0) {
+        console.error(
+          "No accounts has been found, Please connect your Wallet!"
+        );
+        return; // Exit.
+      }
+
+      const owner = accounts[0];
+      const tokenIds = await getOwnedNFTs(nftContract, owner);
+      setOwnedNFTs[tokenIds];
+    } catch (error) {
+      console.error("Error fetching NFTs:", error);
+    }
   };
 
   return (
