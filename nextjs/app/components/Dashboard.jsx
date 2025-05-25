@@ -24,6 +24,8 @@ export const Dashboard = () => {
       const owner = accounts[0];
       const tokenIds = await getOwnedNFTs(nftContract, owner);
       setOwnedNFTs[tokenIds];
+
+      console.log(setOwnedNFTs, tokenIds);
     } catch (error) {
       console.error("Error fetching NFTs:", error);
     }
